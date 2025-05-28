@@ -21,7 +21,7 @@
         .chart-container {
             position: relative;
             margin: auto;
-            height: 70vh; /* 縦軸の表示領域を縮小 (90vh -> 70vh) */
+            height: 70vh; 
             width: 90vw;
             max-width: 800px;
         }
@@ -91,9 +91,9 @@
                 <thead class="bg-gray-50">
                     <tr>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">政策分野</th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">革新性</th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">生産性</th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell">規模</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell md:whitespace-nowrap md:w-24">革新性</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell md:whitespace-nowrap md:w-24">生産性</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider hidden md:table-cell md:whitespace-nowrap md:w-24">規模</th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">関連事業・内容</th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">評価・コメント</th>
                     </tr>
@@ -244,7 +244,7 @@
             },
             {
                 id: 20,
-                name: "食料安全保障・農林水産業振興",
+                name: "食料安全保障・農林水産業振흥",
                 x: 40, y: 60, scale: 17,
                 projects: "スマート農業推進、農地集約化、6次産業化支援、水産資源管理強化、輸出拡大戦略",
                 evaluation: "国内自給率向上と持続可能な農林水産業の確立。担い手不足が深刻。"
@@ -332,11 +332,11 @@
             const row = policyTableBody.insertRow();
             row.insertCell().textContent = policy.name;
             const cellX = row.insertCell();
-            cellX.textContent = policy.x; // X評価（革新性）
+            cellX.textContent = policy.x; 
             cellX.classList.add('hidden', 'md:table-cell');
 
             const cellY = row.insertCell();
-            cellY.textContent = policy.y; // Y評価（生産性）
+            cellY.textContent = policy.y; 
             cellY.classList.add('hidden', 'md:table-cell');
             
             const cellScale = row.insertCell(); 
