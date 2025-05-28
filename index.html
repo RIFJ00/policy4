@@ -21,7 +21,7 @@
         .chart-container {
             position: relative;
             margin: auto;
-            height: 90vh;
+            height: 70vh; /* 縦軸の表示領域を縮小 (90vh -> 70vh) */
             width: 90vw;
             max-width: 800px;
         }
@@ -431,7 +431,7 @@
                                 innerHtml += `<div class="text-xs">X (革新度): ${dataPoint.x}</div>`;
                                 innerHtml += `<div class="text-xs">Y (生産性): ${dataPoint.y}</div>`;
                                 if (dataPoint.scale !== undefined) {
-                                    innerHtml += `<div class="text-xs">規模: ${dataPoint.scale}</div>`; // ツールチップの表示も変更
+                                    innerHtml += `<div class="text-xs">規模: ${dataPoint.scale}</div>`;
                                 }
                                 tooltipEl.innerHTML = innerHtml;
                             }
