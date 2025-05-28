@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>政府重要政策:分野別マトリクス分析</title>
+    <title>重要政策:分野別マトリクス分析</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -32,7 +32,7 @@
         }
         th, td {
             border: 1px solid #e5e7eb; /* Tailwind gray-200 */
-            padding: 12px; /* パディングを少し調整する可能性あり */
+            padding: 12px; 
             text-align: left;
         }
         th {
@@ -78,7 +78,7 @@
 </head>
 <body class="p-4 md:p-8">
     <div class="container mx-auto bg-white p-6 rounded-lg shadow-xl">
-        <h1 class="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-700">政府重要政策:分野別マトリクス分析</h1>
+        <h1 class="text-2xl md:text-3xl font-bold text-center mb-6 text-gray-700">重要政策:分野別マトリクス分析</h1>
 
         <div class="chart-container mb-8 relative">
             <div class="axis-label-y">非生産的 ← Y軸 → 生産的</div>
@@ -244,7 +244,7 @@
             },
             {
                 id: 20,
-                name: "食料安全保障・農林水産業振흥",
+                name: "食料安全保障・農林水産業振興", // ハングル修正
                 x: 40, y: 60, scale: 17,
                 projects: "スマート農業推進、農地集約化、6次産業化支援、水産資源管理強化、輸出拡大戦略",
                 evaluation: "国内自給率向上と持続可能な農林水産業の確立。担い手不足が深刻。"
@@ -318,6 +318,49 @@
                 x: 65, y: 60, scale: 13,
                 projects: "特定技能制度の運用改善、日本語教育・生活支援の充実、多文化共生センター設置",
                 evaluation: "労働力確保と社会の多様化に貢献。社会統合と国民理解の醸成が重要。"
+            },
+            // 新規追加政策分野
+            {
+                id: 31,
+                name: "デジタル推進産業政策",
+                x: 80, y: 75, scale: 18,
+                projects: "AI・IoT・5G活用支援、データ利活用促進基盤整備、半導体産業国内投資促進、ソフトウェア産業振興",
+                evaluation: "デジタル技術による既存産業の競争力強化と新産業創出。高度デジタル人材の育成と確保、国際標準化への対応が鍵。"
+            },
+            {
+                id: 32,
+                name: "公共事業",
+                x: 30, y: 50, scale: 24,
+                projects: "道路・橋梁・港湾等のインフラ整備・維持管理、老朽化対策、防災・減災のための河川改修・ダム建設",
+                evaluation: "国土強靭化、経済活動の基盤整備に寄与。計画・執行段階でのDX推進による効率化、費用対効果の厳格な評価が求められる。"
+            },
+            {
+                id: 33,
+                name: "GX・グリーン投資",
+                x: 88, y: 70, scale: 23,
+                projects: "再生可能エネルギー導入拡大支援（太陽光、風力、地熱等）、省エネルギー技術開発・導入補助、CCUS技術開発・実証、GX経済移行債発行",
+                evaluation: "脱炭素社会実現に向けた産業構造・エネルギー需給構造の転換。巨額投資が必要であり、技術革新と民間投資の喚起、国際連携が不可欠。"
+            },
+            {
+                id: 34,
+                name: "デジタル通貨・フィンテック",
+                x: 92, y: 70, scale: 15,
+                projects: "CBDC（中央銀行デジタル通貨）検討・研究開発、ステーブルコイン等暗号資産に関する規制整備、金融機関API連携推進、キャッシュレス決済普及促進",
+                evaluation: "金融サービスの効率化、利便性向上、新たな金融ビジネス創出。利用者保護、マネーロンダリング対策、サイバーセキュリティ確保が重要課題。"
+            },
+            {
+                id: 35,
+                name: "補助金政策",
+                x: 40, y: 35, scale: 20,
+                projects: "中小企業向け経営改善・設備投資補助、研究開発助成金、地域活性化交付金、農林水産業補助金など多岐にわたる",
+                evaluation: "特定の政策目的達成のための財政支援。効果の薄い補助金の見直しやEBPMに基づく効果検証、市場の歪みを最小限に抑える設計が重要。"
+            },
+            {
+                id: 36,
+                name: "財政規律",
+                x: 20, y: 55, scale: 30,
+                projects: "プライマリーバランス黒字化目標の堅持、中長期の経済財政試算に基づく歳出・歳入改革、ワイズスペンディングの徹底",
+                evaluation: "持続可能な財政運営と将来世代への負担軽減。経済成長との両立、社会保障制度改革との連携が不可欠。国民的議論が必要。"
             }
         ];
 
